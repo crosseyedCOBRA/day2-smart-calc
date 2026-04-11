@@ -1,0 +1,14 @@
+/home/mike/Projects/csharp-practice/day2-smart-calc/bin/Debug/net8.0/day2-smart-calc
+/home/mike/Projects/csharp-practice/day2-smart-calc/bin/Debug/net8.0/day2-smart-calc.deps.json
+/home/mike/Projects/csharp-practice/day2-smart-calc/bin/Debug/net8.0/day2-smart-calc.runtimeconfig.json
+/home/mike/Projects/csharp-practice/day2-smart-calc/bin/Debug/net8.0/day2-smart-calc.dll
+/home/mike/Projects/csharp-practice/day2-smart-calc/bin/Debug/net8.0/day2-smart-calc.pdb
+/home/mike/Projects/csharp-practice/day2-smart-calc/obj/Debug/net8.0/day2-smart-calc.GeneratedMSBuildEditorConfig.editorconfig
+/home/mike/Projects/csharp-practice/day2-smart-calc/obj/Debug/net8.0/day2-smart-calc.AssemblyInfoInputs.cache
+/home/mike/Projects/csharp-practice/day2-smart-calc/obj/Debug/net8.0/day2-smart-calc.AssemblyInfo.cs
+/home/mike/Projects/csharp-practice/day2-smart-calc/obj/Debug/net8.0/day2-smart-calc.csproj.CoreCompileInputs.cache
+/home/mike/Projects/csharp-practice/day2-smart-calc/obj/Debug/net8.0/day2-smart-calc.dll
+/home/mike/Projects/csharp-practice/day2-smart-calc/obj/Debug/net8.0/refint/day2-smart-calc.dll
+/home/mike/Projects/csharp-practice/day2-smart-calc/obj/Debug/net8.0/day2-smart-calc.pdb
+/home/mike/Projects/csharp-practice/day2-smart-calc/obj/Debug/net8.0/day2-smart-calc.genruntimeconfig.cache
+/home/mike/Projects/csharp-practice/day2-smart-calc/obj/Debug/net8.0/ref/day2-smart-calc.dll
