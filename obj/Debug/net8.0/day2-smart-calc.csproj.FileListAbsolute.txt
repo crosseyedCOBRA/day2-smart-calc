@@ -12,3 +12,4 @@
 /home/mike/Projects/csharp-practice/day2-smart-calc/obj/Debug/net8.0/day2-smart-calc.pdb
 /home/mike/Projects/csharp-practice/day2-smart-calc/obj/Debug/net8.0/day2-smart-calc.genruntimeconfig.cache
 /home/mike/Projects/csharp-practice/day2-smart-calc/obj/Debug/net8.0/ref/day2-smart-calc.dll
+/home/mike/Projects/csharp-practice/day2-smart-calc/obj/Debug/net8.0/day2-smart-calc.sourcelink.json
