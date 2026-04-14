@@ -1,80 +1,115 @@
-﻿int first_number;
-int sec_number;
-int total = 0;
-int action;
-int run_again = 1;
+﻿using System.Globalization;
 
-while (run_again != 2)
+class Program
 {
+    static void Main()
+    {
+        while (ShowMenu())
+        {
 
-    Console.Write("Enter your first number and press Enter:  ");
-        while (!int.TryParse(Console.ReadLine(), out first_number))
+            int num1 = GetNumber("Enter your first number and press Enter: ");
+            string op = GetOperator();
+            int num2 = GetNumber("Enter your second number and press Enter: ");
+
+            double result = Calculate(num1, num2, op);
+
+            DisplayResult(result);
+
+        }
+    }
+
+    static bool ShowMenu()
+    {
+        while (true)
+        {
+            Console.WriteLine("Would you like to continue or exit the calculator? Enter 1 to continue or 2 to exit. ");
+
+            string input = Console.ReadLine();
+
+
+            if (input == "1")
+            {
+                return true;
+            }
+            else if (input == "2")
+            {
+                Console.WriteLine("The program has exited.");
+                return false;
+
+            }
+            else
+            {
+                Console.WriteLine("Input Invalid. Input either 1 or 2.");
+            }
+        }
+    }
+
+    static int GetNumber(string message)
+    {
+        int num;
+        Console.Write("Enter your first number and press Enter:  ");
+        while (!int.TryParse(Console.ReadLine(), out num))
         {
             Console.Write("Invalid Input. Please enter a valid number.");
-            
+
         }
-    //Console.WriteLine("First Number entered is: " + first_number);
+        return num;
+    }
 
+    static string GetOperator(string message)
+    {
+        int action;
 
-
-    Console.Write("Which action would you like to take? Enter the corresponding number and press Enter. \n 1. +  \n 2. - \n 3. * \n 4. /  \n");
-        while (!int.TryParse(Console.ReadLine(), out action))
+        while (true)
         {
-            Console.WriteLine("Invalid Input. Please enter a valid number.");
+            Console.WriteLine("Please enter the corresponding number to the action you want to take.");
+            Console.WriteLine("1. +");
+            Console.WriteLine("2. -");
+            Console.WriteLine("3. *");
+            Console.WriteLine("4. /");
+
+            if (!int.TryParse(Console.ReadLine(), out action))
+            {
+                Console.WriteLine("Invalid input. Please enter a valid number.");
+                continue;
+            }
+
+            if (action == 1)
+            {
+                return "+";
+            }
+            else if (action == 2)
+            {
+                return "-";
+            }
+            else if (action == 3)
+            {
+                return "*";
+            }
+            else if (action == 4)
+            {
+                return "/";
+            }
+            else
+            {
+                Console.WriteLine("Invalid selection. Try again.");
+            }
         }
-    
+    }
 
-
-    Console.Write("Enter your second number and press Enter:  ");
-        while (!int.TryParse(Console.ReadLine(), out sec_number))
+    static double Calculate(int a, int b, string op)
+    {
+        while (true)
         {
-            Console.Write("Invalid Input. Please enter a valid number.");
-            
+            a + op + b;
         }
-       // Console.WriteLine("Second Number entered is: " + sec_number);
+    }
 
-
-        
-        string action_taken = "";
-        
-        if (action == 1 )
+    static void DisplayResult(double result)
+    {
+        while (true)
         {
-            total = first_number + sec_number;
-            action_taken = "+";
+            Console.WriteLine(result);
         }
-        else if (action == 2 )
-        {
-            total = first_number - sec_number;
-            action_taken = "-";
-        }
-        else if (action == 3 )
-        {
-            total = first_number * sec_number;
-            action_taken = "*";
-        }
-        else if (action == 4)
-        {
-            total = first_number / sec_number;
-            action_taken = "/";
-        }
-
-
-Console.WriteLine("Your equation was: " + first_number + " " + action_taken + " " + sec_number + " = " + total);
-
-
-
-Console.WriteLine("Would you like to do another calculation or quit? Enter 1 or 2 and press enter. \n 1. Run Again \n 2. Exit");
-        while (!int.TryParse(Console.ReadLine(), out run_again))
-        {
-            Console.Write("Invalid Input. Please enter a valid number.");
-            
-        }
-        if (run_again == 2 )
-        {
-            Console.WriteLine("Calculator has exited.");
-        }
-
-
-
-
+    }
 }

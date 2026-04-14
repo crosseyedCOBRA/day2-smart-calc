@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("day2-smart-calc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e40a68db21a32cf83647cdbcd73d3938a2e4c78f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+561b6d8a438e50f708c55a63582899fbd8636a31")]
 [assembly: System.Reflection.AssemblyProductAttribute("day2-smart-calc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("day2-smart-calc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
