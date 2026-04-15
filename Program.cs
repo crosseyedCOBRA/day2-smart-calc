@@ -7,13 +7,13 @@ class Program
         while (ShowMenu())
         {
 
-            int num1 = GetNumber("Enter your first number and press Enter: ");
-            string op = GetOperator();
-            int num2 = GetNumber("Enter your second number and press Enter: ");
+            int a = GetNumber("Enter your first number and press Enter: ");
+            string op = GetOperator("Choose Operator");
+            int b = GetNumber("Enter your second number and press Enter: ");
 
-            double result = Calculate(num1, num2, op);
+            double result = Calculate(a, b, op);
 
-            DisplayResult(result);
+            DisplayResult(a, b, op, result);
 
         }
     }
@@ -47,7 +47,7 @@ class Program
     static int GetNumber(string message)
     {
         int num;
-        Console.Write("Enter your first number and press Enter:  ");
+        Console.Write("Enter your number and press Enter:  ");
         while (!int.TryParse(Console.ReadLine(), out num))
         {
             Console.Write("Invalid Input. Please enter a valid number.");
@@ -99,17 +99,36 @@ class Program
 
     static double Calculate(int a, int b, string op)
     {
-        while (true)
+        if (op == "+")
         {
-            a + op + b;
+            return a + b;
+        }
+        else if (op == "-")
+        {
+            return a - b;
+        }
+        else if (op == "*")
+        {
+            return a * b;
+        }
+        else if (op == "/")
+        {
+            if (b == 0)
+            {
+                Console.WriteLine("Error: Cannot Divide by Zero.");
+                return 0;
+            }
+            return (double)a / b;
+        }
+        else
+        {
+            Console.WriteLine("Invalid Operator.");
+            return 0;
         }
     }
 
-    static void DisplayResult(double result)
+    static void DisplayResult(int a, int b, string op, double result)
     {
-        while (true)
-        {
-            Console.WriteLine(result);
-        }
+        Console.WriteLine($"{a} {op} {b} = {result}");
     }
 }
